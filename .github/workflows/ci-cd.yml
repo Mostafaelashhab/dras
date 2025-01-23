@@ -44,4 +44,4 @@ jobs:
     steps:
     - name: Deploy to Server
       run: |
-        ssh user@your-server-ip "cd /path-to-your-laravel-app && git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan optimize"
+        ssh root@45.93.137.152 "cd /var/www/html/laravel2 && git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan optimize"
